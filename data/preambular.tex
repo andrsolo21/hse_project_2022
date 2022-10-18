@@ -1,5 +1,11 @@
 %%% Работа с русским языком
 \usepackage[english,russian]{babel}   %% загружает пакет многоязыковой вёрстки
+
+%\usepackage{polyglossia}    %для русского языка
+%\usepackage{xecyr}          %кириллические символы
+%\setdefaultlanguage{russian}  %% устанавливает главный язык документа
+%\setotherlanguage{english} %% объявляет второй язык документа
+
 \usepackage{fontspec}      %% подготавливает загрузку шрифтов Open Type, True Type и др.
 \defaultfontfeatures{Ligatures={TeX},Renderer=Basic}  %% свойства шрифтов по умолчанию
 \setmainfont[Ligatures={TeX,Historic}]{Times New Roman} %% задаёт основной шрифт документа
@@ -170,6 +176,17 @@
     \end{center}}
 
 \usepackage{enumerate}
+\usepackage{lastpage}
+
+
+
 
 %сноска с новым номером на кждоый странице
 \usepackage[perpage]{footmisc}
+ 
+\DeclareCaptionLabelSeparator{deffis}{ -- } %разделитель объекта и названия
+
+
+
+
+
